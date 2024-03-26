@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "skippy"
+version = "0.0.1"
+description = "Simple tool to go accross CI in Gitlab repos and detect skipped tests"
+authors = ["M. Lisiecki"]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+python-gitlab = "^4.4.0"
+plotly = "^5.20.0"
+
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.3.2"
+pytest = "^8.1.1"
+
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.ruff]
+line-length = 120
